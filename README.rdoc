@@ -13,7 +13,7 @@ In ApplicationController, include RailsZombie. That's all.
     include RailsZombie
   end
 
-  class UsersController
+  class UsersController < ApplicationController
   
     ....
 
