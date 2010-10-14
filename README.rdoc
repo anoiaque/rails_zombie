@@ -1,5 +1,5 @@
 == Overview
-  Auto define controller model instance variable and nested instance variable(s) and assign their values from id and nested id
+Auto define controller model instance variable and nested instance variable(s) and assign their values from id and nested id
 
   
 == Usage
