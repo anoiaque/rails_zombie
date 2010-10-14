@@ -1,13 +1,34 @@
 == Overview
   Auto define controller model instance variable and nested instance variable(s) and assign their
   values from id and nested id
+
   
 == Usage
 
 In ApplicationController, include RailsZombie. That's all.
-Example
 
+<b>Example</b>
+  Suppose we have user controller nested on company
 
+  class ApplicationController < ...
+    include RailsZombie
+  end
+
+  class UsersController
+  
+    ....
+
+    def show
+      # You have @user and @company defined and assign from params[:id] and params[:company_id]
+      # No need to do @user = User.find(params[:id]) and @company = Company.find(params[:company_id])
+    end
+
+    ....
+  end
+
+  /companies/2/users/1 => in controller you have @user with id 1 and @company with id 2 already defined.
+
+  
 
 
 
